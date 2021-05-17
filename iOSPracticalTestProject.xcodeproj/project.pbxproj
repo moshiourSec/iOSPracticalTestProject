@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		643034672652D790002EEA98 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643034662652D790002EEA98 /* MovieListTableViewCell.swift */; };
 		64C0FE2C2652AB840058629B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE2B2652AB840058629B /* AppDelegate.swift */; };
 		64C0FE2E2652AB840058629B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE2D2652AB840058629B /* SceneDelegate.swift */; };
 		64C0FE332652AB840058629B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0FE312652AB840058629B /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		643034662652D790002EEA98 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 		64C0FE282652AB840058629B /* iOSPracticalTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPracticalTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C0FE2B2652AB840058629B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64C0FE2D2652AB840058629B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		643034652652D770002EEA98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				643034662652D790002EEA98 /* MovieListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		64C0FE1F2652AB840058629B = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +164,7 @@
 		64C0FE622652B3660058629B /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				643034652652D770002EEA98 /* View */,
 				64C0FE872652CAA60058629B /* Model */,
 				64C0FE862652CA9D0058629B /* ViewModel */,
 				64C0FE772652C69A0058629B /* Controller */,
@@ -287,6 +298,7 @@
 				64C0FE822652C8940058629B /* MovieListViewController.swift in Sources */,
 				64C0FE512652AE980058629B /* URLRequest+Request.swift in Sources */,
 				64C0FE902652D0200058629B /* MovieList.swift in Sources */,
+				643034672652D790002EEA98 /* MovieListTableViewCell.swift in Sources */,
 				64C0FE712652C58B0058629B /* Coordinator.swift in Sources */,
 				64C0FE542652AF190058629B /* JSONDecoder+Decoder.swift in Sources */,
 				64C0FE2C2652AB840058629B /* AppDelegate.swift in Sources */,
