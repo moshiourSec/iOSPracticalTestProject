@@ -11,7 +11,6 @@ protocol MovieListViewModelDelegate {
     func loadMovieListView()
 }
 
-
 class MovieListViewModel {
     
     private(set) var delegate: MovieListViewModelDelegate?
@@ -26,8 +25,6 @@ class MovieListViewModel {
     init() {
         movieList = [MovieListCellVM]()
     }
-
-
     
     func viewDidLoad<T>(_ vc: T) {
         self.delegate = vc.self as? MovieListViewModelDelegate
@@ -56,20 +53,16 @@ class MovieListViewModel {
                 case .success(let data, let status):
                     switch status {
                     case HTTPStatusCodes.OK:
-                        
                         JSONDecoder.decodeData(model: MovieList.self, data) { [weak self](result) in
                             switch result
                             {
                             case .success(let data):
                                 print("data:::: \(data)")
-                                //if let data = data {
-                                    if let movies = data.results {
-                                        self?.movieList = movies.map({ (result) -> MovieListCellVM in
-                                            return MovieListCellVM(title: result.title, overview: result.overview, poster_path: result.poster_path)
-                                        })
-                                    }
-                               // }
-                                
+                                if let movies = data.results {
+                                    self?.movieList = movies.map({ (result) -> MovieListCellVM in
+                                        return MovieListCellVM(title: result.title, overview: result.overview, poster_path: result.poster_path)
+                                    })
+                                }
                                 break
                                 
                             case .failure(let error):
@@ -103,6 +96,7 @@ class MovieListViewModel {
         }
         
     }
+    
 }
 
 

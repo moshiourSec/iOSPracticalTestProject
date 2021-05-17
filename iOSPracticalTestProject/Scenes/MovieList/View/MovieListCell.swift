@@ -7,11 +7,23 @@
 
 import UIKit
 
-class MovieListTableViewCell: UITableViewCell {
+class MovieListCell: UITableViewCell {
+    
+    @IBOutlet weak var  posterImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptonLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    var eachCell:MovieListCellVM!{
+        didSet {
+           // self.imageView ==
+            self.titleLabel.text = eachCell.title
+            self.descriptonLabel.text = eachCell.overview
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
