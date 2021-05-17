@@ -23,6 +23,8 @@
 		64C0FE792652C6AE0058629B /* MovieListVCCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE782652C6AE0058629B /* MovieListVCCoordinator.swift */; };
 		64C0FE7E2652C85A0058629B /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE7D2652C85A0058629B /* UIViewController+Extension.swift */; };
 		64C0FE822652C8940058629B /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE812652C8940058629B /* MovieListViewController.swift */; };
+		64C0FE892652CAC00058629B /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE882652CAC00058629B /* MovieListViewModel.swift */; };
+		64C0FE8D2652CC0E0058629B /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE8C2652CC0E0058629B /* URLs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		64C0FE782652C6AE0058629B /* MovieListVCCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListVCCoordinator.swift; sourceTree = "<group>"; };
 		64C0FE7D2652C85A0058629B /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		64C0FE812652C8940058629B /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
+		64C0FE882652CAC00058629B /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		64C0FE8C2652CC0E0058629B /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 		64C0FE432652AC220058629B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				64C0FE8B2652CBFF0058629B /* API */,
 				64C0FE6F2652C5780058629B /* Protocol */,
 				64C0FE4F2652AE7E0058629B /* Extension */,
 				64C0FE452652AC770058629B /* WebService */,
@@ -147,6 +152,8 @@
 		64C0FE622652B3660058629B /* MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				64C0FE872652CAA60058629B /* Model */,
+				64C0FE862652CA9D0058629B /* ViewModel */,
 				64C0FE772652C69A0058629B /* Controller */,
 			);
 			path = MovieList;
@@ -175,6 +182,29 @@
 				64C0FE312652AB840058629B /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		64C0FE862652CA9D0058629B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		64C0FE872652CAA60058629B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				64C0FE882652CAC00058629B /* MovieListViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64C0FE8B2652CBFF0058629B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				64C0FE8C2652CC0E0058629B /* URLs.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,12 +280,14 @@
 				64C0FE752652C5B70058629B /* AppCoordinator.swift in Sources */,
 				64C0FE7E2652C85A0058629B /* UIViewController+Extension.swift in Sources */,
 				64C0FE572652AF8F0058629B /* URLResponse+Extension.swift in Sources */,
+				64C0FE892652CAC00058629B /* MovieListViewModel.swift in Sources */,
 				64C0FE822652C8940058629B /* MovieListViewController.swift in Sources */,
 				64C0FE512652AE980058629B /* URLRequest+Request.swift in Sources */,
 				64C0FE712652C58B0058629B /* Coordinator.swift in Sources */,
 				64C0FE542652AF190058629B /* JSONDecoder+Decoder.swift in Sources */,
 				64C0FE2C2652AB840058629B /* AppDelegate.swift in Sources */,
 				64C0FE4D2652AE150058629B /* WebService.swift in Sources */,
+				64C0FE8D2652CC0E0058629B /* URLs.swift in Sources */,
 				64C0FE792652C6AE0058629B /* MovieListVCCoordinator.swift in Sources */,
 				64C0FE5A2652AFD30058629B /* HTTPStatusCodes.swift in Sources */,
 				64C0FE602652B1C10058629B /* Reachability.swift in Sources */,
