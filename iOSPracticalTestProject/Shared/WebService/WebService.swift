@@ -29,7 +29,6 @@ typealias HandlerResult = Result<Data,Error>
 
 struct Resource {
     let url: URL
-    var authorization: String?
     var httpMethod: HttpMethod = .get
     var body: Data? = nil
 }

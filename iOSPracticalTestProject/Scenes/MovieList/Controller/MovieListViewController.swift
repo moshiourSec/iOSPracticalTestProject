@@ -10,11 +10,19 @@ import UIKit
 class MovieListViewController: UIViewController {
     
     var coordinator: MovieListVCCoordinator?
+    private(set) var viewModel = MovieListViewModel()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.viewModel.viewDidLoad(self)
+        getMovieList()
+        
+    }
+    
+    func getMovieList() {
+        self.viewModel.getMovieListData(resource: self.viewModel.CreateMovieListRequest())
     }
     
 }

@@ -25,6 +25,7 @@
 		64C0FE822652C8940058629B /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE812652C8940058629B /* MovieListViewController.swift */; };
 		64C0FE892652CAC00058629B /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE882652CAC00058629B /* MovieListViewModel.swift */; };
 		64C0FE8D2652CC0E0058629B /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE8C2652CC0E0058629B /* URLs.swift */; };
+		64C0FE902652D0200058629B /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE8F2652D0200058629B /* MovieList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		64C0FE812652C8940058629B /* MovieListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 		64C0FE882652CAC00058629B /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		64C0FE8C2652CC0E0058629B /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		64C0FE8F2652D0200058629B /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 		64C0FE862652CA9D0058629B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				64C0FE882652CAC00058629B /* MovieListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -194,7 +197,7 @@
 		64C0FE872652CAA60058629B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				64C0FE882652CAC00058629B /* MovieListViewModel.swift */,
+				64C0FE8F2652D0200058629B /* MovieList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				64C0FE892652CAC00058629B /* MovieListViewModel.swift in Sources */,
 				64C0FE822652C8940058629B /* MovieListViewController.swift in Sources */,
 				64C0FE512652AE980058629B /* URLRequest+Request.swift in Sources */,
+				64C0FE902652D0200058629B /* MovieList.swift in Sources */,
 				64C0FE712652C58B0058629B /* Coordinator.swift in Sources */,
 				64C0FE542652AF190058629B /* JSONDecoder+Decoder.swift in Sources */,
 				64C0FE2C2652AB840058629B /* AppDelegate.swift in Sources */,
