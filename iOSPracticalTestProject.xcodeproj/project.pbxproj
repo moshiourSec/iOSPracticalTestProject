@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		64C0FE2C2652AB840058629B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE2B2652AB840058629B /* AppDelegate.swift */; };
 		64C0FE2E2652AB840058629B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE2D2652AB840058629B /* SceneDelegate.swift */; };
-		64C0FE302652AB840058629B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE2F2652AB840058629B /* ViewController.swift */; };
 		64C0FE332652AB840058629B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0FE312652AB840058629B /* Main.storyboard */; };
 		64C0FE352652AB850058629B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64C0FE342652AB850058629B /* Assets.xcassets */; };
 		64C0FE382652AB850058629B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64C0FE362652AB850058629B /* LaunchScreen.storyboard */; };
+		64C0FE4D2652AE150058629B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE4C2652AE150058629B /* WebService.swift */; };
+		64C0FE512652AE980058629B /* URLRequest+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE502652AE980058629B /* URLRequest+Request.swift */; };
+		64C0FE542652AF190058629B /* JSONDecoder+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE532652AF190058629B /* JSONDecoder+Decoder.swift */; };
+		64C0FE572652AF8F0058629B /* URLResponse+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE562652AF8F0058629B /* URLResponse+Extension.swift */; };
+		64C0FE5A2652AFD30058629B /* HTTPStatusCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE592652AFD30058629B /* HTTPStatusCodes.swift */; };
+		64C0FE602652B1C10058629B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE5F2652B1C10058629B /* Reachability.swift */; };
+		64C0FE652652B3900058629B /* MovieListvCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C0FE642652B3900058629B /* MovieListvCV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64C0FE282652AB840058629B /* iOSPracticalTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPracticalTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64C0FE2B2652AB840058629B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64C0FE2D2652AB840058629B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64C0FE2F2652AB840058629B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64C0FE322652AB840058629B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64C0FE342652AB850058629B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64C0FE372652AB850058629B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64C0FE392652AB850058629B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64C0FE4C2652AE150058629B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		64C0FE502652AE980058629B /* URLRequest+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Request.swift"; sourceTree = "<group>"; };
+		64C0FE532652AF190058629B /* JSONDecoder+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Decoder.swift"; sourceTree = "<group>"; };
+		64C0FE562652AF8F0058629B /* URLResponse+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLResponse+Extension.swift"; sourceTree = "<group>"; };
+		64C0FE592652AFD30058629B /* HTTPStatusCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCodes.swift; sourceTree = "<group>"; };
+		64C0FE5F2652B1C10058629B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		64C0FE642652B3900058629B /* MovieListvCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListvCV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,101 @@
 		64C0FE2A2652AB840058629B /* iOSPracticalTestProject */ = {
 			isa = PBXGroup;
 			children = (
-				64C0FE2B2652AB840058629B /* AppDelegate.swift */,
-				64C0FE2D2652AB840058629B /* SceneDelegate.swift */,
-				64C0FE2F2652AB840058629B /* ViewController.swift */,
+				64C0FE402652AB940058629B /* AppDelegates */,
+				64C0FE412652ABDE0058629B /* Scenes */,
+				64C0FE422652AC100058629B /* Views */,
+				64C0FE432652AC220058629B /* Shared */,
 				64C0FE312652AB840058629B /* Main.storyboard */,
 				64C0FE342652AB850058629B /* Assets.xcassets */,
 				64C0FE362652AB850058629B /* LaunchScreen.storyboard */,
 				64C0FE392652AB850058629B /* Info.plist */,
 			);
 			path = iOSPracticalTestProject;
+			sourceTree = "<group>";
+		};
+		64C0FE402652AB940058629B /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				64C0FE2B2652AB840058629B /* AppDelegate.swift */,
+				64C0FE2D2652AB840058629B /* SceneDelegate.swift */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		64C0FE412652ABDE0058629B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				64C0FE622652B3660058629B /* MovieList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		64C0FE422652AC100058629B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64C0FE432652AC220058629B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				64C0FE4F2652AE7E0058629B /* Extension */,
+				64C0FE472652ACF00058629B /* DataSource */,
+				64C0FE462652ACCB0058629B /* Protocols */,
+				64C0FE452652AC770058629B /* WebService */,
+				64C0FE442652AC700058629B /* Helper */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		64C0FE442652AC700058629B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				64C0FE5F2652B1C10058629B /* Reachability.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		64C0FE452652AC770058629B /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				64C0FE4C2652AE150058629B /* WebService.swift */,
+				64C0FE592652AFD30058629B /* HTTPStatusCodes.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		64C0FE462652ACCB0058629B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		64C0FE472652ACF00058629B /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		64C0FE4F2652AE7E0058629B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				64C0FE502652AE980058629B /* URLRequest+Request.swift */,
+				64C0FE532652AF190058629B /* JSONDecoder+Decoder.swift */,
+				64C0FE562652AF8F0058629B /* URLResponse+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		64C0FE622652B3660058629B /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				64C0FE642652B3900058629B /* MovieListvCV.swift */,
+			);
+			path = MovieList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +235,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C0FE302652AB840058629B /* ViewController.swift in Sources */,
+				64C0FE572652AF8F0058629B /* URLResponse+Extension.swift in Sources */,
+				64C0FE512652AE980058629B /* URLRequest+Request.swift in Sources */,
+				64C0FE542652AF190058629B /* JSONDecoder+Decoder.swift in Sources */,
 				64C0FE2C2652AB840058629B /* AppDelegate.swift in Sources */,
+				64C0FE652652B3900058629B /* MovieListvCV.swift in Sources */,
+				64C0FE4D2652AE150058629B /* WebService.swift in Sources */,
+				64C0FE5A2652AFD30058629B /* HTTPStatusCodes.swift in Sources */,
+				64C0FE602652B1C10058629B /* Reachability.swift in Sources */,
 				64C0FE2E2652AB840058629B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

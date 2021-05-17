@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MovieListvCV.swift
 //  iOSPracticalTestProject
 //
 //  Created by Moshiur Rahman Bilash on 5/17/21.
@@ -7,13 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MovieListvCV: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        
     }
-
-
+    
 }
-
