@@ -20,7 +20,15 @@ class MovieListCell: UITableViewCell {
     
     var eachCell:MovieListCellVM!{
         didSet {
-           // self.imageView ==
+            
+            let placeholderImage = UIImage(named: "movie_PlaceHolder")
+            self.posterImageView.getImage(url: "\(URL.imageURL)\(eachCell.poster_path ?? "")", placeholderImage: placeholderImage) { (success) in
+                        //   cell.bannerImageView.contentMode = .scaleAspectFill
+                           
+                       } failer: { (failed) in
+                           self.posterImageView.image = placeholderImage
+                          // cell.bannerImageView.contentMode = .scaleAspectFit
+                       }
             self.titleLabel.text = eachCell.title
             self.descriptonLabel.text = eachCell.overview
         }
