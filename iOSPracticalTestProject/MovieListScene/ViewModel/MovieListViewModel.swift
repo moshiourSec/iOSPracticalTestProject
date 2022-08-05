@@ -2,7 +2,7 @@
 //  MovieListViewModel.swift
 //  iOSPracticalTestProject
 //
-//  Created by BJIT LTD on 5/8/22.
+//  Created by Md. Moshiour Rahman on 5/8/22.
 //
 
 import Foundation
@@ -33,19 +33,6 @@ class MovieListViewModel {
 
 
     func createMovieListRequest(_ query: String = "marvel") -> Resource {
-
-//        guard var url = URL.moviePath else {
-//            fatalError("URl was incorrect")
-//        }
-//
-//        print("URL STRING: \(urlString)")
-//        guard let url = URL(string: urlString) else {
-//            fatalError("URl was incorrect")
-//        }
-//        var resource = Resource(url: url)
-//        resource.httpMethod = HttpMethod.get
-//        return resource
-
 
         guard var url = URL.movieListURL else {
             fatalError("URl was incorrect")
@@ -111,11 +98,9 @@ class MovieListViewModel {
         } else {
             print("no internet")
         }
-
     }
 
 }
-
 
 struct MovieListCellVM {
     var title: String?

@@ -63,6 +63,7 @@ class MovieListViewController: BaseViewController {
     }
 
     func setUpView() {
+        searchBar.delegate = self
         view.addSubview(navigationView)
         view.addSubview(titleLabel)
         view.addSubview(searchBar)
@@ -103,6 +104,26 @@ extension MovieListViewController: MovieListViewModelDelegate {
         }
 
     }
+}
+
+extension MovieListViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        NSObject.cancelPreviousPerformRequests(withTarget: self, selector: #selector(self.reload(_:)), object: searchBar)
+        perform(#selector(self.reload(_:)), with: searchBar, afterDelay: 0.3)
+    }
+
+    @objc func reload(_ searchBar: UISearchBar) {
+        guard let query = searchBar.text, query.trimmingCharacters(in: .whitespaces) != "" else {
+            getMovieList()
+            return
+        }
+
+        self.viewModel.getMovieListData(resource: self.viewModel.createMovieListRequest(query))
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+            searchBar.resignFirstResponder()
+     }
 }
 
 
