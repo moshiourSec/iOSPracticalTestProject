@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  iOSPracticalTestProject
 //
-//  Created by BJIT LTD on 5/8/22.
+//  Created by Md. Moshiour Rahman on 5/8/22.
 //
 
 import UIKit
@@ -48,12 +48,18 @@ class MovieListViewController: BaseViewController {
     }()
 
     var coordinator: MovieListVCCoordinator?
+    private(set) var tableViewDataSource: GenericDataSource<MovieListTableViewCell,MovieListCellVM>!
+    private(set) var viewModel = MovieListViewModel()
+    let activity = ActivityIndicator()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
         setUpView()
+        self.viewModel.viewDidLoad(self)
+        self.getMovieList()
+        self.initilizedMovieListDataSource()
     }
 
     func setUpView() {
@@ -64,8 +70,41 @@ class MovieListViewController: BaseViewController {
         SetUpUIConstraints()
     }
 
+    private func initilizedMovieListDataSource(){
+
+        self.tableViewDataSource = GenericDataSource.init(cellIdentifier: "MovieListTableViewCell", items:self.viewModel.movieList, configureCell: { (cell, vm,indexpath) in
+            cell.eachItem = vm
+        })
+    self.tableView.dataSource = self.tableViewDataSource
+    }
+
+    func getMovieList() {
+        self.viewModel.getMovieListData(resource: self.viewModel.createMovieListRequest())
+    }
 
 }
+
+extension MovieListViewController: MovieListViewModelDelegate {
+    func showOrHideLoader(loader: Bool) {
+        DispatchQueue.main.async { [self] in
+            if loader == true {
+                print("loading ")
+                activity.showLoading(view: self.view)
+            } else {
+                activity.hideLoading()
+            }
+        }
+    }
+
+    func loadMovieListView() {
+        self.tableViewDataSource.updateItems(self.viewModel.movieList)
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+
+    }
+}
+
 
 extension MovieListViewController {
 

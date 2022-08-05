@@ -2,7 +2,7 @@
 //  MovieListTableViewCell.swift
 //  iOSPracticalTestProject
 //
-//  Created by BJIT LTD on 5/8/22.
+//  Created by Md. Moshiour Rahman on 5/8/22.
 //
 
 import UIKit
@@ -59,6 +59,16 @@ class MovieListTableViewCell: UITableViewCell {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+
+    var eachItem: MovieListCellVM! {
+
+        didSet {
+
+            self.movieTitleLabel.text = eachItem.title
+            self.overviewLabel.text = eachItem.overview
+
+        }
+    }
 
 }
 

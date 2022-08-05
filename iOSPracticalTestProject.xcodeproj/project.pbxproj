@@ -29,6 +29,11 @@
 		899E434D289D25FF00866A75 /* JSONDecoder+Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899E434C289D25FF00866A75 /* JSONDecoder+Decoder.swift */; };
 		899E434F289D262400866A75 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899E434E289D262400866A75 /* WebService.swift */; };
 		899E4351289D264200866A75 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899E4350289D264200866A75 /* HTTPStatusCode.swift */; };
+		899E4355289D293600866A75 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899E4354289D293600866A75 /* MovieList.swift */; };
+		899E4357289D29E000866A75 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899E4356289D29E000866A75 /* MovieListViewModel.swift */; };
+		899E435A289D2AD200866A75 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899E4359289D2AD200866A75 /* TableViewDataSource.swift */; };
+		899E435D289D2B4A00866A75 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899E435C289D2B4A00866A75 /* Reachability.swift */; };
+		899E435F289D2BEC00866A75 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899E435E289D2BEC00866A75 /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,11 @@
 		899E434C289D25FF00866A75 /* JSONDecoder+Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Decoder.swift"; sourceTree = "<group>"; };
 		899E434E289D262400866A75 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		899E4350289D264200866A75 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
+		899E4354289D293600866A75 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		899E4356289D29E000866A75 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		899E4359289D2AD200866A75 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		899E435C289D2B4A00866A75 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		899E435E289D2BEC00866A75 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +176,9 @@
 		899E432D289D229C00866A75 /* MovieListScene */ = {
 			isa = PBXGroup;
 			children = (
+				899E4352289D291100866A75 /* Model */,
 				899E4331289D232400866A75 /* View */,
+				899E4353289D291700866A75 /* ViewModel */,
 				899E4330289D231800866A75 /* Controller */,
 			);
 			path = MovieListScene;
@@ -203,9 +215,11 @@
 				899E4349289D25C500866A75 /* WebService */,
 				899E4342289D251700866A75 /* Extensions */,
 				899E433B289D24AE00866A75 /* Protocol */,
+				899E4358289D2AAE00866A75 /* DataSource */,
 				899E4338289D245800866A75 /* BaseViewController */,
 				899E433E289D24E600866A75 /* API */,
 				899E433F289D24EC00866A75 /* Constants */,
+				899E435B289D2B0C00866A75 /* Helper */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -260,6 +274,39 @@
 				899E4350289D264200866A75 /* HTTPStatusCode.swift */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		899E4352289D291100866A75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				899E4354289D293600866A75 /* MovieList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		899E4353289D291700866A75 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				899E4356289D29E000866A75 /* MovieListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		899E4358289D2AAE00866A75 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				899E4359289D2AD200866A75 /* TableViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		899E435B289D2B0C00866A75 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				899E435C289D2B4A00866A75 /* Reachability.swift */,
+				899E435E289D2BEC00866A75 /* ActivityIndicator.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,6 +444,8 @@
 				899E4346289D258800866A75 /* UIViewController+Extension.swift in Sources */,
 				899E4341289D250200866A75 /* URLs.swift in Sources */,
 				899E434F289D262400866A75 /* WebService.swift in Sources */,
+				899E435F289D2BEC00866A75 /* ActivityIndicator.swift in Sources */,
+				899E4355289D293600866A75 /* MovieList.swift in Sources */,
 				899E432F289D22C000866A75 /* AppCoordinator.swift in Sources */,
 				899E4301289D223500866A75 /* MovieListViewController.swift in Sources */,
 				899E4335289D23C500866A75 /* MovieListVCCoordinator.swift in Sources */,
@@ -409,6 +458,9 @@
 				899E433A289D247500866A75 /* BaseViewController.swift in Sources */,
 				899E4351289D264200866A75 /* HTTPStatusCode.swift in Sources */,
 				899E42FF289D223500866A75 /* SceneDelegate.swift in Sources */,
+				899E435A289D2AD200866A75 /* TableViewDataSource.swift in Sources */,
+				899E435D289D2B4A00866A75 /* Reachability.swift in Sources */,
+				899E4357289D29E000866A75 /* MovieListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@
 //  iOSPracticalTestProjectUITestsLaunchTests.swift
 //  iOSPracticalTestProjectUITests
 //
-//  Created by BJIT LTD on 5/8/22.
+//  Created by Md. Moshiour Rahman on 5/8/22.
 //
 
 import XCTest
