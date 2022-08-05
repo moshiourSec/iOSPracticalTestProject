@@ -67,6 +67,18 @@ class MovieListTableViewCell: UITableViewCell {
             self.movieTitleLabel.text = eachItem.title
             self.overviewLabel.text = eachItem.overview
 
+            guard let path = eachItem.poster_path else {
+                return
+            }
+
+            let url = "\(BaseURL.moviePosterURL.rawValue)\(path)"
+
+            let placeholderImage = UIImage(named: "placeholderImage")
+            self.moviePosterImageView.getImage(url: url, placeholderImage:placeholderImage) { (success) in
+            } failer: { [weak self] _ in
+                self?.moviePosterImageView.image = placeholderImage
+            }
+
         }
     }
 
